@@ -1,1 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seven-Day Revenue Workflow Audit | MN Global Investment Holdings</title>
+<meta name="description" content="A written seven-day audit that maps how leads, quotes, and invoices move in your trade business, with a plan you can act on. For owner-operated businesses in Duluth and the Iron Range.">
+<meta property="og:title" content="Seven-Day Revenue Workflow Audit">
+<meta property="og:description" content="A written map of how your leads become cash, and a 30-day plan. Duluth and the Iron Range trades.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0f2a3a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f2a3a'/%3E%3Cpath d='M6 22V10l6 8 6-8v12M23 10v12' stroke='%23d9853b' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{--navy:#0f2a3a;--navy2:#173b50;--pine:#1f5f4f;--copper:#b5601f;--copper-l:#e39a55;--paper:#f6f3ee;--white:#fff;--ink:#1c2a33;--muted:#4d5d68;--line:#d9d3c8;--r:12px;--max:1080px}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;font:1.0625rem/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--paper);-webkit-text-size-adjust:100%}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0 0 .5em;color:var(--navy)}
+h1{font-size:clamp(2.1rem,5.5vw,3.5rem)}h2{font-size:clamp(1.6rem,3.5vw,2.25rem)}h3{font-size:1.2rem}
+p{margin:0 0 1em}a{color:var(--pine)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 1.25rem}
+section{padding:4.5rem 0}
+.eyebrow{font:700 .8rem/1 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);margin-bottom:.9rem;display:block}
+.skip{position:absolute;left:-999px;top:0;background:var(--white);color:var(--navy);padding:.75rem 1rem;z-index:100}
+.skip:focus{left:.5rem;top:.5rem}
+:focus-visible{outline:3px solid var(--copper-l);outline-offset:3px}
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(15,42,58,.96);backdrop-filter:blur(6px)}
+.bar{display:flex;align-items:center;justify-content:space-between;min-height:64px}
+.brand{color:var(--white);text-decoration:none;font:700 1.05rem Georgia,serif;display:flex;align-items:center;gap:.6rem}
+.brand span{display:grid;place-items:center;width:34px;height:34px;border-radius:8px;background:var(--copper);font-size:.8rem;letter-spacing:.02em}
+nav ul{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0;align-items:center}
+nav a{color:#dbe6ec;text-decoration:none;font-size:.95rem}nav a:hover{color:var(--white)}
+.btn{display:inline-block;background:var(--copper);color:var(--white);font-weight:700;text-decoration:none;padding:.9rem 1.5rem;border-radius:10px;border:2px solid var(--copper);cursor:pointer;font-size:1rem;transition:background .2s,transform .2s}
+.btn:hover{background:#9a4f15;border-color:#9a4f15}
+.btn.ghost{background:transparent;border-color:rgba(255,255,255,.55)}.btn.ghost:hover{background:rgba(255,255,255,.12)}
+nav .btn{padding:.55rem 1rem;color:var(--white)}
+.menu{display:none;background:none;border:1px solid rgba(255,255,255,.4);color:var(--white);border-radius:8px;padding:.5rem .8rem;font-size:.95rem;cursor:pointer}
+/* hero */
+.hero{position:relative;color:var(--white);padding:6rem 0 5.5rem;overflow:hidden;background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 55%,#1c5a52 100%)}
+.hero svg.topo{position:absolute;inset:0;width:100%;height:100%;opacity:.16}
+.hero .wrap{position:relative}
+.hero h1{color:var(--white);max-width:16ch}
+.hero .lead{font-size:1.2rem;max-width:56ch;color:#e6eef2}
+.cta{display:flex;flex-wrap:wrap;gap:.9rem;margin:1.8rem 0 1.4rem}
+.facts{display:flex;flex-wrap:wrap;gap:.6rem;padding:0;margin:0;list-style:none}
+.facts li{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:.35rem .9rem;font-size:.9rem}
+/* flow */
+.flow{list-style:none;padding:0;margin:2rem 0 0;display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;counter-reset:s}
+.flow li{position:relative;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:1.2rem 1rem;text-align:center;font-weight:600;color:var(--navy);counter-increment:s}
+.flow li::before{content:counter(s);display:grid;place-items:center;width:32px;height:32px;margin:0 auto .6rem;border-radius:50%;background:var(--navy);color:var(--white);font-size:.9rem}
+.flow li:not(:last-child)::after{content:"→";position:absolute;right:-.95rem;top:50%;transform:translateY(-50%);color:var(--copper);font-weight:700;z-index:1}
+.flow small{display:block;font-weight:400;color:var(--muted);font-size:.85rem;margin-top:.25rem}
+/* grids/cards */
+.grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:2rem}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:1.6rem}
+.card h3{margin-bottom:.4rem}.card p:last-child,.card ul:last-child{margin-bottom:0}
+.alt{background:var(--white);border-block:1px solid var(--line)}
+.alt .card{background:var(--paper)}
+ul.tick{list-style:none;padding:0;margin:0 0 1em}
+ul.tick li{position:relative;padding-left:1.7rem;margin-bottom:.55rem}
+ul.tick li::before{content:"";position:absolute;left:0;top:.5em;width:.9rem;height:.5rem;border-left:3px solid var(--pine);border-bottom:3px solid var(--pine);transform:rotate(-45deg) translateY(-30%)}
+ul.no li::before{border:0;width:.9rem;height:3px;background:var(--copper);transform:none;top:.75em}
+/* pricing */
+.price{font:700 2.4rem Georgia,serif;color:var(--navy);line-height:1;margin:.3rem 0 .6rem}
+.price small{font:400 .95rem system-ui,sans-serif;color:var(--muted)}
+.card.feature{border:2px solid var(--copper);position:relative}
+.tag{position:absolute;top:-.8rem;left:1.2rem;background:var(--copper);color:var(--white);font-size:.75rem;font-weight:700;padding:.25rem .7rem;border-radius:999px;letter-spacing:.05em;text-transform:uppercase}
+.tablewrap{overflow-x:auto;margin-top:1.5rem;border:1px solid var(--line);border-radius:var(--r);background:var(--white)}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:.98rem}
+th,td{text-align:left;padding:.85rem 1rem;border-bottom:1px solid var(--line)}
+th{background:var(--navy);color:var(--white);font-weight:600}tr:last-child td{border-bottom:0}
+.note{background:#fdf3e7;border-left:4px solid var(--copper);padding:1rem 1.2rem;border-radius:0 var(--r) var(--r) 0;margin-top:1.5rem}
+/* timeline */
+.days{list-style:none;margin:2rem 0 0;padding:0;border-left:3px solid var(--copper-l)}
+.days li{position:relative;padding:0 0 1.3rem 1.6rem}
+.days li::before{content:"";position:absolute;left:-.62rem;top:.45rem;width:.9rem;height:.9rem;border-radius:50%;background:var(--copper);border:3px solid var(--paper)}
+.days b{color:var(--navy)}
+/* faq + cta */
+details{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:1rem 1.25rem;margin-bottom:.8rem}
+summary{cursor:pointer;font-weight:600;color:var(--navy)}details p{margin:.7rem 0 0;color:var(--muted)}
+.start{background:linear-gradient(160deg,var(--navy),#1c5a52);color:var(--white)}
+.start h2{color:var(--white)}.start p{color:#e6eef2;max-width:60ch}
+.start a.mail{color:var(--copper-l);font-weight:700;word-break:break-all}
+footer{background:#0a1c27;color:#b9c8d1;padding:2.5rem 0;font-size:.92rem}
+footer a{color:#e6eef2}footer p{margin:0 0 .5rem}
+@media(max-width:820px){
+ section{padding:3.2rem 0}.hero{padding:4rem 0 3.5rem}
+ .menu{display:block}
+ nav{position:absolute;left:0;right:0;top:100%;background:var(--navy);display:none;padding:1rem 1.25rem 1.4rem;border-top:1px solid rgba(255,255,255,.12)}
+ nav.open{display:block}nav ul{flex-direction:column;align-items:flex-start;gap:1rem}
+ .flow{grid-template-columns:1fr}.flow li:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-1.15rem;transform:translateX(-50%)}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+ <div class="wrap bar">
+  <a class="brand" href="#top" aria-label="MN Global Investment Holdings, home"><span aria-hidden="true">MN</span>MN Global</a>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Primary">
+   <ul>
+    <li><a href="#audit">The audit</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#terms">Terms</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a class="btn" href="#start">Get started</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
 
+<main id="main">
+<div class="hero" id="top">
+ <svg class="topo" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false" fill="none" stroke="#fff" stroke-width="1.2">
+  <path d="M-20 420C120 360 200 440 330 390S560 300 820 360"/><path d="M-20 380C120 320 200 400 330 350S560 260 820 320"/>
+  <path d="M-20 340C120 280 200 360 330 310S560 220 820 280"/><path d="M-20 300C120 240 200 320 330 270S560 180 820 240"/>
+  <path d="M-20 260C120 200 200 280 330 230S560 140 820 200"/><path d="M-20 220C120 160 200 240 330 190S560 100 820 160"/>
+  <path d="M-20 180C120 120 200 200 330 150S560 60 820 120"/><path d="M-20 140C120 80 200 160 330 110S560 20 820 80"/>
+ </svg>
+ <div class="wrap">
+  <span class="eyebrow" style="color:var(--copper-l)">For owner-operated trade businesses in Duluth and the Iron Range</span>
+  <h1>See exactly where your leads leak before they become cash.</h1>
+  <p class="lead">The Seven-Day Revenue Workflow Audit is a written map of how calls, quotes, and invoices move through your business, the three bottlenecks that matter most, and a 30-day plan you can act on.</p>
+  <div class="cta"><a class="btn" href="#start">Request the questionnaire</a><a class="btn ghost" href="#pricing">See pricing</a></div>
+  <ul class="facts"><li>Delivered in writing</li><li>Within seven days of payment</li><li>No calls or meetings</li><li>We never take your passwords</li></ul>
+ </div>
+</div>
+
+<section id="who">
+ <div class="wrap">
+  <span class="eyebrow">Who it is for</span>
+  <h2>Built for HVAC, plumbing, roofing, electrical, and remodeling owners.</h2>
+  <p>If you answer the calls, build the quotes, and send the invoices yourself, this is for you. Most owners in your position recognize at least one of these:</p>
+  <div class="grid">
+   <div class="card"><h3>Missed after-hours calls</h3><p>Leads ring once, get voicemail, and call the next contractor on the list.</p></div>
+   <div class="card"><h3>Quotes typed in Word</h3><p>Every quote starts from scratch, and follow-up depends on your memory.</p></div>
+   <div class="card"><h3>Invoices sent monthly</h3><p>Finished jobs sit unbilled for weeks, and cash arrives later than it should.</p></div>
+   <div class="card"><h3>Receipts in a box</h3><p>Paper piles up until someone has to sort it by hand.</p></div>
+  </div>
+  <p class="note"><strong>Best fit:</strong> owner-operated businesses with roughly two to 25 people, where the owner is the buyer. It is not a fit for franchises or companies with a compliance department.</p>
+ </div>
+</section>
+
+<section class="alt" id="audit">
+ <div class="wrap">
+  <span class="eyebrow">The audit</span>
+  <h2>One written blueprint, from lead to cash.</h2>
+  <p>You answer a short questionnaire in writing. We map how work moves in your business today and deliver the results as a document you can hand to anyone on your team.</p>
+  <ol class="flow" aria-label="Lead to cash workflow">
+   <li>Lead<small>Call, text, form</small></li><li>Quote<small>Estimate sent</small></li><li>Job<small>Scheduled, done</small></li><li>Invoice<small>Billed</small></li><li>Cash<small>Collected</small></li>
+  </ol>
+  <div class="grid">
+   <div class="card"><h3>What the blueprint contains</h3>
+    <ul class="tick"><li>A current-state map from lead to cash</li><li>Your top three bottlenecks, with evidence from your answers</li><li>Estimates of hours and cash effects, each with its inputs shown</li><li>Tools with costs, sorted into do now, later, and skip</li><li>A 30-day rollout plan</li></ul></div>
+   <div class="card"><h3>What we do not do</h3>
+    <ul class="tick no"><li>Bookkeeping, tax, or legal work</li><li>Take passwords or log in to your accounts</li><li>Guarantee outcomes or results</li><li>Share findings before the audit fee is paid</li></ul></div>
+  </div>
+  <p class="note"><strong>Honest about our estimates:</strong> every number in your blueprint shows the inputs behind it and is labeled an estimate. Anything you did not provide is marked as an assumption.</p>
+ </div>
+</section>
+
+<section id="pricing">
+ <div class="wrap">
+  <span class="eyebrow">Pricing</span>
+  <h2>Clear, fixed prices.</h2>
+  <p>Start with the audit. Builds and care plans are optional and only follow if the plan makes sense for you.</p>
+  <div class="grid">
+   <div class="card feature"><span class="tag">Pilot rate</span><h3>Pilot audit</h3><p class="price">$497</p>
+    <p>Limited to the first three clients. In return we ask for written permission to publish an anonymized case study, plus two written check-ins at 30 and 60 days.</p></div>
+   <div class="card"><h3>Seven-Day Revenue Workflow Audit</h3><p class="price">$997</p>
+    <p>The full written blueprint, delivered within seven days of payment. Payment is due before day one.</p>
+    <p><strong>Rush delivery: +$300.</strong> Three-day delivery, offered only when capacity allows.</p></div>
+  </div>
+  <h3 style="margin-top:2.4rem">Optional builds after the audit</h3>
+  <div class="tablewrap"><table>
+   <caption class="skip" style="position:static;left:auto;height:0;overflow:hidden;padding:0">Build and care plan prices</caption>
+   <thead><tr><th scope="col">Build</th><th scope="col">Scope</th><th scope="col">Fixed price</th></tr></thead>
+   <tbody>
+    <tr><th scope="row" style="background:none;color:inherit">Starter</th><td>One workflow</td><td>$1,500</td></tr>
+    <tr><th scope="row" style="background:none;color:inherit">Standard</th><td>Up to three workflows</td><td>$3,500</td></tr>
+    <tr><th scope="row" style="background:none;color:inherit">Full</th><td>Up to six workflows and a results dashboard</td><td>$6,500</td></tr>
+   </tbody></table></div>
+  <div class="tablewrap"><table>
+   <thead><tr><th scope="col">Care plan</th><th scope="col">Includes</th><th scope="col">Per month</th></tr></thead>
+   <tbody>
+    <tr><th scope="row" style="background:none;color:inherit">Essential</th><td>Monitoring and 2 change requests</td><td>$197</td></tr>
+    <tr><th scope="row" style="background:none;color:inherit">Growth</th><td>6 change requests and a monthly report</td><td>$397</td></tr>
+    <tr><th scope="row" style="background:none;color:inherit">Scale</th><td>15 change requests, weekly report, quarterly review</td><td>$797</td></tr>
+   </tbody></table></div>
+  <p class="note"><strong>The audit credit.</strong> Sign a build within 14 days of your audit and the audit fee comes off the build price. The remainder is split 50% at signing and 50% at acceptance. Example: a Starter build is $1,500 &minus; $997 = $503, so $251.50 at signing and $251.50 at acceptance. Third-party tools are paid by you directly, at cost. Care plans are billed monthly in advance with a 30-day cancel.</p>
+ </div>
+</section>
+
+<section class="alt" id="process">
+ <div class="wrap">
+  <span class="eyebrow">How it works</span>
+  <h2>Seven days, all in writing.</h2>
+  <ol class="days">
+   <li><b>Day 0.</b> Agreement signed and payment received. You get the start date and delivery date in writing.</li>
+   <li><b>Day 1.</b> We read your questionnaire answers and list any gaps. Missing items are requested as screenshots or exports, never passwords.</li>
+   <li><b>Days 2 to 3.</b> We map your current state from lead to cash.</li>
+   <li><b>Day 4.</b> We rank your bottlenecks and build estimates with the inputs shown.</li>
+   <li><b>Day 5.</b> We choose tools and costs, sort them into do now, later, and skip, and write the 30-day rollout.</li>
+   <li><b>Day 6.</b> The founder reviews the full packet.</li>
+   <li><b>Day 7.</b> The blueprint is delivered in writing with a cover note.</li>
+   <li><b>Days 8 to 14.</b> Optional proposal window. The audit credit applies if you sign a build by day 14.</li>
+  </ol>
+ </div>
+</section>
+
+<section id="terms">
+ <div class="wrap">
+  <span class="eyebrow">Terms in plain language</span>
+  <h2>What you can count on.</h2>
+  <div class="grid">
+   <div class="card"><h3>Written only</h3><p>Everything is delivered in writing. We do not take calls or meetings.</p></div>
+   <div class="card"><h3>AI-assisted, human-reviewed</h3><p>Our work is prepared with an AI operating system and reviewed by the founder, Terry Williams, before anything reaches you. This is disclosed in every client agreement.</p></div>
+   <div class="card"><h3>No guarantees</h3><p>We do not promise specific results, and we have no track record to point to yet. That is why the first three audits are discounted.</p></div>
+   <div class="card"><h3>Pay first, then we start</h3><p>The audit fee is paid before day one. No findings are shared before payment.</p></div>
+   <div class="card"><h3>Your data stays yours</h3><p>We never take passwords. Data handling terms are set out in the client agreement you sign before work begins.</p></div>
+   <div class="card"><h3>Builds have limits</h3><p>Each build has a fixed scope, milestones, acceptance criteria, exclusions, one revision round, and a 14-day defect window.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="alt" id="faq">
+ <div class="wrap" style="max-width:800px">
+  <span class="eyebrow">Questions</span>
+  <h2>Frequently asked</h2>
+  <details><summary>What do I need to do?</summary><p>Answer a six-topic questionnaire by email. We ask only for information about how your business handles leads, quotes, jobs, and invoices.</p></details>
+  <details><summary>Can we talk on the phone first?</summary><p>No. We work in writing so that everything is documented and you can revisit it. If you have a question, email it.</p></details>
+  <details><summary>Do I have to buy a build?</summary><p>No. The audit stands alone. The blueprint is yours to act on with your own team or any provider.</p></details>
+  <details><summary>Will you need access to my accounts?</summary><p>No. We never take passwords. If we need to see something, you send a screenshot or an export.</p></details>
+  <details><summary>Are there testimonials or results?</summary><p>Not yet. We are new and will publish a case study only after a client approves it in writing.</p></details>
+ </div>
+</section>
+
+<section class="start" id="start">
+ <div class="wrap">
+  <span class="eyebrow" style="color:var(--copper-l)">How to start</span>
+  <h2>Ask for the questionnaire.</h2>
+  <p>Send us a short email with your business name and trade. We will reply with the questionnaire. If it looks like a fit, we send the agreement and invoice. Nothing is charged from this page.</p>
+  <div class="cta"><a class="btn" id="mailbtn" href="#start">Email us to begin</a></div>
+  <p>Or write to <a class="mail" id="mailtxt" href="#start"></a></p>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <p><strong>MN Global Investment Holdings, LLC</strong> &middot; Founder: Terry Williams</p>
+  <p>Mailing address: 1626 London Rd, PMB 3046, Duluth, MN 55812-1619</p>
+  <p>Received one of our emails and want no more? Reply STOP and you will be removed the same day.</p>
+  <p>&copy; <span id="yr">2026</span> MN Global Investment Holdings, LLC. All rights reserved.</p>
+ </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  // CONFIG: set this to your real Zoho Mail address (must match your Porkbun domain).
+  var EMAIL = "info@mnglobalcompliance.com";
+
+  var subject = "Audit questionnaire request";
+  var body = "Hello Terry,\n\nPlease send the questionnaire.\n\nBusiness name:\nTrade:\nCity:\nNumber of people:\n\nThank you,\n";
+  var href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  var btn = document.getElementById("mailbtn"), txt = document.getElementById("mailtxt");
+  btn.href = href; txt.href = href; txt.textContent = EMAIL;
+
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  var menu = document.getElementById("menu"), nav = document.getElementById("nav");
+  function setMenu(open) { nav.classList.toggle("open", open); menu.setAttribute("aria-expanded", String(open)); }
+  menu.addEventListener("click", function () { setMenu(!nav.classList.contains("open")); });
+  nav.addEventListener("click", function (e) { if (e.target.tagName === "A") setMenu(false); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") setMenu(false); });
+})();
+</script>
+</body>
+</html>
